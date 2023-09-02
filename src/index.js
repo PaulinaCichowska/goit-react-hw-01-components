@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { Profile } from './components';
-import user from "user.json"
+import { Profile, Statistics, FriendList, TransactionHistory} from './components';
+import user from "user.json";
+import data from "data.json";
+import friends from 'friends.json';
+import transactions from 'transactions.json';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -12,5 +15,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     location={user.location}
     avatar={user.avatar}
     stats={user.stats}/>
+    <Statistics title='Upload stats' stats={data}></Statistics>
+    <FriendList friends={friends}/>
+    <TransactionHistory items ={transactions}/>
   </React.StrictMode>
 );
