@@ -1,4 +1,4 @@
-
+import PropTypes from "prop-types"
 
 export const FriendList = ({friends}) => 
 <div>
@@ -14,3 +14,10 @@ export const FriendList = ({friends}) =>
 </ul>
 </div>
 
+FriendList.propTypes = {
+    status: PropTypes.bool,
+    avatar: PropTypes.string,
+    name: PropTypes.string,
+    id:PropTypes.number,
+  
+  }

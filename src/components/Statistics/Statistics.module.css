@@ -1,0 +1,11 @@
+.statistics{
+    display: flex;
+    flex-direction: column;
+}
+.title{}
+.list{
+
+}
+.item{}
+.label{}
+.percentage{}

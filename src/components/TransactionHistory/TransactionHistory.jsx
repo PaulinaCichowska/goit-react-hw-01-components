@@ -1,3 +1,7 @@
+
+import PropTypes from "prop-types"
+
+
 export const TransactionHistory = ({items})=>
 <table className="transaction-history">
   <thead>
@@ -19,3 +23,11 @@ export const TransactionHistory = ({items})=>
 
   </tbody>
 </table>
+
+TransactionHistory.propTypes = {
+    type: PropTypes.string,
+    currency: PropTypes.string,
+    amount:PropTypes.number,
+    id:PropTypes.number,
+  
+  }
