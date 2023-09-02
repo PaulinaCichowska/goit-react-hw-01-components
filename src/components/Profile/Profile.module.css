@@ -1,13 +1,14 @@
 .profile{
-    background-color: grey;
-    box-shadow: 10px 5px 5px rgb(190, 177, 177);
-
+background-color: WHITE;
+box-shadow: 10px 5px 5px rgb(190, 177, 177);
 display: flex;
 flex-direction: column;
 align-items:center;
-margin: 20px 200px;
+margin: 0 auto;
+margin-top: 30px;
 padding: 10px;
 min-width: 360px;
+max-width: 460px;
 border-radius: 6px;
 }
 .description{
