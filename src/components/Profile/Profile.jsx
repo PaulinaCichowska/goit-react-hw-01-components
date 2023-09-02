@@ -1,28 +1,28 @@
-export const Profile = ({name, tag, location}) => 
-<div class="profile">
-<div class="description">
+export const Profile = ({name, tag,avatar, location, stats}) => 
+<div className="profile">
+<div className="description">
   <img
-    src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+    src={avatar}
     alt="User avatar"
-    class="avatar"
+    className="avatar"
   />
-  <p class="name">{name}</p>
-  <p class="tag">{tag}</p>
-  <p class="location">{location}</p>
+  <p className="name">{name}</p>
+  <p className="tag">{tag}</p>
+  <p className="location">{location}</p>
 </div>
 
-<ul class="stats">
+<ul className="stats">
   <li>
-    <span class="label">Followers</span>
-    <span class="quantity">1000</span>
+    <span className="label">Followers</span>
+    <span className="quantity">{stats.followers}</span>
   </li>
   <li>
-    <span class="label">Views</span>
-    <span class="quantity">2000</span>
+    <span className="label">Views</span>
+    <span className="quantity">{stats.views}</span>
   </li>
   <li>
-    <span class="label">Likes</span>
-    <span class="quantity">3000</span>
+    <span className="label">Likes</span>
+    <span className="quantity">{stats.likes}</span>
   </li>
 </ul>
 </div>
