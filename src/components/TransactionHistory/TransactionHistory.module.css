@@ -1,27 +1,32 @@
-.tabele{
-    font-family: sans-serif;
-    padding:40px 20px;
-    color:#fff;
-    margin: 0 auto;
+.tabele {
+	font-family: sans-serif;
+	padding: 40px 20px;
+	color: #fff;
+	margin: 0 auto;
 }
-.transactionHistory{
-    width: 80%;
+
+.transactionHistory {
+	width: 80%;
 	border-collapse: collapse;
 	margin: 0 auto;
 }
-.tr{
+
+.tr {
 	background: #000;
-	background: rgba(255,255,255,.3);
-	border-bottom:solid 1px #fff;
+	background: rgba(255, 255, 255, .3);
+	border-bottom: solid 1px #fff;
 	text-align: left;
 }
-.row{
-	background: rgba(255,255,255,.1);
+
+.row {
+	background: rgba(255, 255, 255, .1);
 }
-.row:hover{
-	background: rgba(255,0,0,.1);
+
+.row:hover {
+	background: rgba(255, 0, 0, .1);
 }
-.td{
+
+.td {
 	padding: 8px 4px;
 	text-align: left;
 }
