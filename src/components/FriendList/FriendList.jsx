@@ -17,10 +17,11 @@ export const FriendList = ({ friends }) =>
   </div>
 
 FriendList.propTypes = {
-  friend: PropTypes.shape({
-    status: PropTypes.bool,
+  friends: PropTypes.arrayOf(PropTypes.shape({
+    isOnline: PropTypes.bool,
     avatar: PropTypes.string,
     name: PropTypes.string,
     id: PropTypes.number,
   })
-}
+  )
+};
